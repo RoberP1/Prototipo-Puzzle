@@ -8,15 +8,11 @@ public class Trigger : MonoBehaviour
     public GameObject PuertaI;
     public GameObject PuertaD;
 
-
     public GameObject Button;
-
 
     public Material Rojo;
     public Material Verde;
-    //public Material MButton;
-
-
+    
     public Animator AnimI;
     public Animator AnimD;
 
@@ -24,7 +20,7 @@ public class Trigger : MonoBehaviour
     {
         AnimI = GetComponent<Animator>();
         AnimD = GetComponent<Animator>();
-        //MButton = Button.GetComponent<Material>();
+        
     }
 
     // Update is called once per frame
