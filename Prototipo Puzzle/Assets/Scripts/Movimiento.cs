@@ -12,7 +12,7 @@ public class Movimiento : MonoBehaviour
 
     public float sensivilidad = 1; //sensivilidad del mouse
 
-    [SerializeField] private Camera FPSCamera; //cabeza
+    private GameObject FPSCamera; //cabeza
     
     //imputs
     private float horizontalInput;
@@ -20,8 +20,13 @@ public class Movimiento : MonoBehaviour
     private float x;
     private float y;
     private float xRotacion;
+
+    public GameObject ObjetoAgarrado;
+
     void Start()
     {
+        FPSCamera = GameObject.Find("Camera");
+        ObjetoAgarrado = null;
         rb = GetComponent<Rigidbody>();
         MouseVisible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -60,6 +65,24 @@ public class Movimiento : MonoBehaviour
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 MouseVisible = true;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(FPSCamera.transform.position,FPSCamera.transform.forward,out RaycastHit hit) && hit.collider.gameObject.CompareTag("Recogible") && hit.distance < 10)
+        {
+            Pick caja = hit.collider.GetComponentInParent<Pick>();
+            
+            
+            if (ObjetoAgarrado == null)
+            {
+                
+                ObjetoAgarrado = hit.collider.gameObject;
+                caja.Recoger();
+            }
+            else
+            {
+                ObjetoAgarrado = null;
+                caja.Soltar();
             }
         }
     }
