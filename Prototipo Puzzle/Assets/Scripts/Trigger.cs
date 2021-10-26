@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public GameObject PuertaI;
     public GameObject PuertaD;
 
@@ -13,13 +13,13 @@ public class Trigger : MonoBehaviour
     public Material Rojo;
     public Material Verde;
     
-    public Animator AnimI;
-    public Animator AnimD;
+    //public Animator AnimI;
+    //public Animator AnimD;
 
     void Start()
     {
-        AnimI = GetComponent<Animator>();
-        AnimD = GetComponent<Animator>();
+        //AnimI = GetComponent<Animator>();
+        //AnimD = GetComponent<Animator>();
         
     }
 
