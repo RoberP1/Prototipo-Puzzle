@@ -21,12 +21,12 @@ public class Movimiento : MonoBehaviour
     private float y;
     private float xRotacion;
 
-    public GameObject ObjetoAgarrado;
+    //public GameObject ObjetoAgarrado;
 
     void Start()
     {
         FPSCamera = GameObject.Find("Camera");
-        ObjetoAgarrado = null;
+        //ObjetoAgarrado = null;
         rb = GetComponent<Rigidbody>();
         MouseVisible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -70,7 +70,7 @@ public class Movimiento : MonoBehaviour
                 MouseVisible = true;
             }
         }
-
+        /*
         if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(FPSCamera.transform.position,FPSCamera.transform.forward,out RaycastHit hit) && hit.collider.gameObject.CompareTag("Recogible") && hit.distance < 10)
         {
             Pick caja = hit.collider.GetComponentInParent<Pick>();
@@ -87,7 +87,7 @@ public class Movimiento : MonoBehaviour
                 ObjetoAgarrado = null;
                 caja.Soltar();
             }
-        }
+        }*/
     }
 
 }

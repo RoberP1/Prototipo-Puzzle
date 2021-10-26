@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 180283044411347098}
   - component: {fileID: 6812619163820638457}
   - component: {fileID: 6989191931184409410}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Recogible
   m_Icon: {fileID: 0}
@@ -105,9 +105,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3321413422468655669}
   - component: {fileID: 5648846704130914675}
-  - component: {fileID: 3131313559159427427}
   - component: {fileID: 7273210634348933461}
-  m_Layer: 0
+  - component: {fileID: 3242791997015443741}
+  m_Layer: 3
   m_Name: Caja
   m_TagString: Recogible
   m_Icon: {fileID: 0}
@@ -145,19 +145,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3131313559159427427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6465898751944932927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba1d1305affbdde47ae1c6b8e36b921e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dest: {fileID: 0}
 --- !u!65 &7273210634348933461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -171,3 +158,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3242791997015443741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6465898751944932927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc234ae714768544b95deee4cf19f082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitOnPickup: 0.2
+  breakForce: 35
+  pickedUp: 0
+  playerInteractions: {fileID: 0}
