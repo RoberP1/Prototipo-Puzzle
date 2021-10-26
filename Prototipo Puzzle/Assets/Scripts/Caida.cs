@@ -22,6 +22,7 @@ public class Caida : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Toco al jugador");
             SceneManager.LoadScene("Example_01", LoadSceneMode.Single);
         }
     }

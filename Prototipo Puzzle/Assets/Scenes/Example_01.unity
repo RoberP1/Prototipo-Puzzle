@@ -1333,6 +1333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 980537912}
   - component: {fileID: 980537911}
+  - component: {fileID: 980537913}
   m_Layer: 0
   m_Name: Caida
   m_TagString: Untagged
@@ -1367,6 +1368,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &980537913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980537910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203eeeee5e47de1478d25f71760d207d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1023004456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3321413422468655669, guid: 1e32e81f2ea649d4b9df47556a14301f, type: 3}
@@ -2816,7 +2829,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 118
   m_CollisionDetection: 0
 --- !u!65 &1929112641
 BoxCollider:
