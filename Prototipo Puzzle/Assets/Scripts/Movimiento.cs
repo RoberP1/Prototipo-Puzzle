@@ -12,6 +12,9 @@ public class Movimiento : MonoBehaviour
 
     public float sensivilidad = 1; //sensivilidad del mouse
 
+
+    public float velSalto = 1; //velocidad de salto
+
     private GameObject FPSCamera; //cabeza
     
     //imputs
@@ -20,6 +23,7 @@ public class Movimiento : MonoBehaviour
     private float x;
     private float y;
     private float xRotacion;
+    
 
     //public GameObject ObjetoAgarrado;
 
@@ -30,6 +34,7 @@ public class Movimiento : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         MouseVisible = false;
         Cursor.lockState = CursorLockMode.Locked;
+       
     }
     // Update is called once per frame
     void Update()
@@ -70,6 +75,8 @@ public class Movimiento : MonoBehaviour
                 MouseVisible = true;
             }
         }
+
+ 
         /*
         if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(FPSCamera.transform.position,FPSCamera.transform.forward,out RaycastHit hit) && hit.collider.gameObject.CompareTag("Recogible") && hit.distance < 10)
         {
@@ -89,5 +96,6 @@ public class Movimiento : MonoBehaviour
             }
         }*/
     }
+
 
 }
