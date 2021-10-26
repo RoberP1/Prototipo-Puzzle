@@ -29,7 +29,7 @@ public class Torreta : MonoBehaviour
         
         if (puertaabierta && (!DebeGirar() || DebeGirar2) )
         {
-            transform.Rotate(0, -velRot, 0);
+            transform.Rotate(0, velRot, 0);
             DebeGirar2 = false;
             
         }

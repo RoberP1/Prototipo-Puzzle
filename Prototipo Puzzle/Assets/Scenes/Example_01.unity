@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400392812246662752, guid: 66636dec8c94bf34daf7e02cce252417, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.08715578
+      value: 0.08715578
       objectReference: {fileID: 0}
     - target: {fileID: 400392812246662752, guid: 66636dec8c94bf34daf7e02cce252417, type: 3}
       propertyPath: m_LocalRotation.z
@@ -168,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400392812246662752, guid: 66636dec8c94bf34daf7e02cce252417, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -10
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4247715674300405454, guid: 66636dec8c94bf34daf7e02cce252417, type: 3}
       propertyPath: m_RootOrder
@@ -192,15 +192,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247715674300405454, guid: 66636dec8c94bf34daf7e02cce252417, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4247715674300405454, guid: 66636dec8c94bf34daf7e02cce252417, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4247715674300405454, guid: 66636dec8c94bf34daf7e02cce252417, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4247715674300405454, guid: 66636dec8c94bf34daf7e02cce252417, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2158,7 +2158,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 750559497532030997, guid: 94e25ba4015bfa147932683dcb9c7c66, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 94e25ba4015bfa147932683dcb9c7c66, type: 3}
 --- !u!1 &1362749061 stripped
 GameObject:
@@ -2278,7 +2279,7 @@ GameObject:
   - component: {fileID: 1546062384}
   m_Layer: 0
   m_Name: Player Body
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2793,6 +2794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba60f3ce435a8d4cb5e4e9c46522ad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  plataforma: {fileID: 0}
   paradas:
   - {fileID: 1236442121}
   - {fileID: 448471773}

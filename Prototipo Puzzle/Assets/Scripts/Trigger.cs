@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Trigger : MonoBehaviour
 {
     
@@ -52,5 +53,6 @@ public class Trigger : MonoBehaviour
             PuertaI.gameObject.SetActive(true);
             Button.GetComponent<MeshRenderer>().material = Rojo;
         }
+        
     }
 }
