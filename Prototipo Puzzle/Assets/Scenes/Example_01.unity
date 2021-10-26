@@ -2518,10 +2518,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02c07ce3085ca354980d659765d01049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 500
+  jumpHeight: 7
   isGrounded: 0
   NumberJumps: 0
-  MaxJumps: 2
+  MaxJumps: 1
 --- !u!4 &1595997137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4247715674300405454, guid: 66636dec8c94bf34daf7e02cce252417, type: 3}
