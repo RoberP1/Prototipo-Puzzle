@@ -8,12 +8,15 @@ public class Torreta : MonoBehaviour
 
     Rigidbody torreta;
     public float velRot;
+    public GameObject puerta;
     bool DebeGirar2;
     bool stop;
+    bool puertaabierta;
 
     
     void Start()
     {
+        puertaabierta = false;
         DebeGirar2 = false;
         stop = true;
         torreta = GetComponent<Rigidbody>();
@@ -22,11 +25,13 @@ public class Torreta : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        puertaabierta = !puerta.active;
         
-        if (!DebeGirar() || DebeGirar2)
+        if (puertaabierta && (!DebeGirar() || DebeGirar2) )
         {
-            transform.Rotate(0, velRot, 0);
+            transform.Rotate(0, -velRot, 0);
             DebeGirar2 = false;
+            
         }
         else
         {
@@ -57,7 +62,7 @@ public class Torreta : MonoBehaviour
 
 
         bool Debogirar = sameRotation0 || sameRotation1 || sameRotation2 || sameRotation3;
-        Debug.Log("Angulos iguales" + Debogirar);
+        
 
         return sameRotation0 || sameRotation1 || sameRotation2 || sameRotation3;
     }

@@ -39,8 +39,11 @@ public class Movimiento : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal")  ;
         verticalInput = Input.GetAxis("Vertical")  ;
 
+        
         //movimiento personaje
         rb.AddRelativeForce(new Vector3(horizontalInput, 0, verticalInput).normalized * vel * Time.deltaTime * 500f);
+
+        
 
         //imputs movimiento camara
         x = Input.GetAxis("Mouse X") * sensivilidad;
